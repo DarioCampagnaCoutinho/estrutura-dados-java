@@ -17,6 +17,9 @@ public class Main {
         lista.adiciona(a2);
         lista.adiciona(a3);
 
+        int tamanhoVetor = lista.tamanho();
+
+        System.out.println(tamanhoVetor);
         System.out.println(lista);
     }
 }
