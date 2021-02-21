@@ -12,6 +12,10 @@ public class Vetor {
         totalDeAlunos++;
     }
 
+    public Aluno pega(int posicao){
+        return alunos[posicao];
+    }
+
     public void remove(int posicao){
 
     }

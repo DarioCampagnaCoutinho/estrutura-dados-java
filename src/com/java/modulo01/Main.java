@@ -22,5 +22,8 @@ public class Main {
         System.out.println(tamanhoVetor);
         System.out.println(lista);
         System.out.println(lista.contem(a1));
+
+        Aluno posicao = lista.pega(1);
+        System.out.println(posicao);
     }
 }
