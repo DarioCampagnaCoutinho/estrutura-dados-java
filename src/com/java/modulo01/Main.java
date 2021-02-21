@@ -25,5 +25,8 @@ public class Main {
 
         Aluno posicao = lista.pega(1);
         System.out.println(posicao);
+
+        lista.adiciona(1, a4);
+        System.out.println(lista);
     }
 }
