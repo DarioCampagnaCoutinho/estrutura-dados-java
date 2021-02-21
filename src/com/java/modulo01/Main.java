@@ -21,5 +21,6 @@ public class Main {
 
         System.out.println(tamanhoVetor);
         System.out.println(lista);
+        System.out.println(lista.contem(a1));
     }
 }
