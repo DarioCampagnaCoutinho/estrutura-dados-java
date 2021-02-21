@@ -12,7 +12,14 @@ public class Vetor {
         totalDeAlunos++;
     }
 
+    public boolean posicaoOcupada(int posicao){
+        return posicao >= 0 && posicao < totalDeAlunos;
+    }
+
     public Aluno pega(int posicao){
+        if(!posicaoOcupada(posicao)){
+            throw new IllegalArgumentException("Posição Inválida!");
+        }
         return alunos[posicao];
     }
 
