@@ -7,7 +7,18 @@ public class Vetor {
     private Aluno [] alunos = new Aluno[100];
     private int totalDeAlunos = 0;
 
+    private void garanteEspaco(){
+        if(totalDeAlunos == alunos.length){
+            Aluno [] novoArray = new Aluno[alunos.length * 2];
+            for(int i = 0; i < alunos.length; i++){
+                novoArray[i] = alunos[i];
+            }
+            this.alunos = novoArray;
+        }
+    }
+
     public void adiciona(Aluno aluno){
+        this.garanteEspaco();
         this.alunos[totalDeAlunos] = aluno;
         totalDeAlunos++;
     }
